@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="AvatarView">
+        <attr name="avatarR" format="dimension"/>
+        <attr name="avatarColor" format="color|reference"/>
+    </declare-styleable>
+</resources>
