@@ -8,9 +8,9 @@
     tools:context="com.app.feng.drawmyavatar.MainActivity">
 
     <com.app.feng.drawmyavatar.view.AvatarView
+        android:id="@+id/avatar_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:avatarR="400dp"
-        app:avatarColor="@color/colorAccent"/>
+        app:avatarR="400dp"/>
 
 </LinearLayout>

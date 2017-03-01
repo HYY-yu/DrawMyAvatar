@@ -20,7 +20,7 @@ public class AvatarView extends View {
 
     private Paint mPaint;
 
-    private final float GEN2 = 1.41421356237f;
+    private Paint arcPaint;
 
     public AvatarView(Context context) {
         super(context);
@@ -53,6 +53,11 @@ public class AvatarView extends View {
         mPaint = new Paint();
         mPaint.setAntiAlias(true);
         mPaint.setColor(avatarColor);
+
+        arcPaint = new Paint(mPaint);
+        arcPaint.setStrokeWidth(avatarR / 4);
+        arcPaint.setStyle(Paint.Style.STROKE);
+        arcPaint.setStrokeCap(Paint.Cap.ROUND);
 
     }
 
@@ -109,10 +114,6 @@ public class AvatarView extends View {
         rectf.right = 4.5f * avatarR;
         rectf.bottom = 4f * avatarR;
 
-        Paint arcPaint = new Paint(mPaint);
-        arcPaint.setStrokeWidth(avatarR / 4);
-        arcPaint.setStyle(Paint.Style.STROKE);
-        arcPaint.setStrokeCap(Paint.Cap.ROUND);
 
         //        Paint test = new Paint();
         //        test.setStyle(Paint.Style.STROKE);
